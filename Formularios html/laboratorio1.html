@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Trabajo propuesto(formulario)-Tecsup</title>
+</head>
+<body>
+    <center>
+    <h1>Travel authorization Form</h1>
+    </center>
+    <h1> Secccion A: Informacion del cliente </h1>
+
+    <form id ="form order">
+        <p>
+            <label for="cargo">Cargo(obligatorio): </label>
+            <input type="text" name="cargo" id="cargo"
+            autofocus
+            placeholder="GERENTE" minlength="4" maxlength="100"
+            required
+            >
+
+        </p>
+        <p>
+            <label for="name">Nombre(obligatorio): </label>
+            <input type="text" name="name" id="name"
+            placeholder = "Nombre"
+            required>
+        </p>
+        <p>
+            <label for="firstname">Primer Apellido(obligatorio): </label>
+            <input type="text" name="firstname" id="firstname"
+            placeholder="Primer Apellido"
+
+            required>
+        </p>
+        <p>
+            <label for="secondname">Segundo Apellido(obligatorio):  </label>
+            <input type="text" name="secondname" id="secondname"
+            placeholder="Segundo Apellido"
+            required>
+        </p>
+        <p>
+            <label for="correo">Correo electronico(obligatorio): </label>
+            <input type="email" name="correo" id="correo"
+            placeholder="ejemplo@tecsup.com"
+            required>
+        </p>
+        <p>
+            <label for="numero">Numero de telefono: </label>
+            <input type="text" name="numero" id="numero"
+            placeholder="999999999" minlength="9" maxlenght="9"
+            >
+        </p>
+
+        <h1>Seccion B: Informacion del viaje</h1>
+
+        <p>
+            <label for="aerolinea">Nombre de la aerolinea: </label>
+            <select name="aerolinea">
+                <option>Aeromexico</option>
+                <option>Copa Airlines</option>
+                <option>Lufthansa</option>
+                <option>United Airlines</option>
+                </select>
+        </p>
+        <p>
+            <label for="destino"> Destino: </label>
+            <br>
+            <textarea name="destino" cols="90" raw="10" placeholder="Escribe aquí el destino... ">
+                </textarea>
+        </p>
+        <p>
+            <label for="fechasalida"> Fecha de Salida: </label>
+            <input type="date" id="fechasalida" name="fechasalida"
+            value="2018-07-22"
+            min="2020-01-01" max="2050-12-31">
+            
+        </p>
+        <p>
+            <label for="fecharegreso"> Fecha de Regreso: </label>
+            <input type="date" id="fecharegreso" name="fecharegreso"
+            value="2018-07-22"
+            min="2020-01-01" max="2050-12-31">
+            
+        </p>
+        <p>
+            <label for="costo">Costo Estimado: </label>
+            <input type="number" name="costo" id="costo"
+            min="100" max="1000"
+
+            required>
+        </p>
+        <p>
+            Gastos adicionales estimados: 
+        </p>
+        <p>
+            <label for="alquilercoche"> Alquiler de coche: </label>
+            <input type="number" name="alquilercoche" id="alquilercoche"
+            min="100" max="600"
+            >
+        </p>
+        <p>
+            <label for="hotel"> Hotel: </label>
+            <input type="number" name="hotel" id="hotel"
+            min="10" max="1000"
+            >
+        </p>
+        <p>
+            <label for="comidas"> Comidas: </label>
+            <input type="number" name="comidas" id="comidas"
+            min="10" max="1000"
+            >
+        </p>
+        
+
+        <input type="submit" name="Enviar">
+
+
+
+
+
+
+
+    </form>
+
+    
+</body>
+</html>
